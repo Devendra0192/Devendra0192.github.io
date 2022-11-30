@@ -77,3 +77,8 @@ $(document).ready(function(){
         }
     });
 });
+
+document.addEventListener('contextmenu', function(e){
+    alert("Sorry, right click is disabled to prevent leakage of confidential functions");
+    e.preventDefault();
+    });
