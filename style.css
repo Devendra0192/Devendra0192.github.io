@@ -516,7 +516,7 @@ section .title::after{
     font-weight: bold;
 }
 .contact .contact-content .info .sub-title:hover{
-    color: teal;
+    color: rgb(6, 110, 179);
     font-size: large;
    
 }
@@ -721,3 +721,8 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+.dark-mode {
+    background-color: rgb(212, 208, 208);
+  }
