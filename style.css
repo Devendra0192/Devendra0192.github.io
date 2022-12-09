@@ -166,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/pic2.png") no-repeat center;
+    background: url("images/fabio-oyXis2kALVg-unsplash.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -194,7 +194,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(6, 110, 179);
+    color: rgb(245, 248, 245);
     font-weight: 500;
 }
 .home .home-content a{
