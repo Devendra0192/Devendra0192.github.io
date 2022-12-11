@@ -314,6 +314,28 @@ section .title::after{
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
+.projects .serv-content .card .box >img{
+   height:200px;
+   width:300px;
+}
+.projects .serv-content .card .box >a{
+    display: inline-block;
+    background: rgb(6, 110, 179);
+    color: rgb(245, 248, 245);
+    font-size: 20px;
+    padding: 6px 16px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(6, 110, 179);
+    transition: all 0.3s ease;
+ }
+ .projects .serv-content .card .box >a:hover{
+    color:black;
+    background-color:white;
+    
+ }
+
 .projects .serv-content .card:hover .box{
     transform: scale(1.05);
 }
