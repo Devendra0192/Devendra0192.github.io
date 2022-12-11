@@ -517,7 +517,7 @@ section .title::after{
 
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    margin-left: 500px;
+    margin-left: 485px;
 }
 .contact .contact-content .text{
     font-size: 20px;
