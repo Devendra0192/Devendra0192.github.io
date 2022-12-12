@@ -84,10 +84,10 @@ $(document).ready(function(){
     });
 });
 //disable right click
-// document.addEventListener('contextmenu', function(e){
-//     alert("Sorry, right click is disabled to prevent leakage of confidential functions");
-//     e.preventDefault();
-//     });
+document.addEventListener('contextmenu', function(e){
+    alert("Sorry, right click is disabled to prevent leakage of confidential functions");
+    e.preventDefault();
+    });
 
     //background color
 var element = document.body;
