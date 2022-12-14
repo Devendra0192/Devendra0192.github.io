@@ -86,14 +86,12 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-   
-
+    
 }
 .navbar.sticky{
     padding: 15px 0;
-    /* background: rgb(6, 110, 179); */
-    backdrop-filter:blur(10px);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgb(6, 110, 179);
+   
     
 }
 .navbar .max-width{
@@ -103,8 +101,7 @@ section .title::after{
    
 }
 .navbar .logo a{
-    /* color: #fff; */
-    color: rgb(6, 110, 179);
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -113,8 +110,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    /* color: #fff; */
-    color: rgb(6, 110, 179);
+    color: #fff;
 }
 .navbar .menu li{
     list-style: none;
@@ -123,20 +119,18 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    /* color: #fff; */
+    color: #fff;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-    color: rgb(247, 69, 69);
      
 }
 .navbar .menu li a:hover{
     color: rgb(6, 110, 179);
 }
 .navbar.sticky .menu li a:hover{
-    /* color: #fff; */
-    color: rgb(6, 110, 179);
+    color: #fff;
 }
 
 /* menu btn styling */
