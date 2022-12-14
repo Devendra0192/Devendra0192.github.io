@@ -85,20 +85,16 @@ section .title::after{
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    
+    transition: all 0.3s ease;   
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(6, 110, 179);
-   
-    
+    background: rgb(6, 110, 179);  
 }
 .navbar .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-   
+    justify-content: space-between;  
 }
 .navbar .logo a{
     color: #fff;
