@@ -120,8 +120,7 @@ section .title::after{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-     
-}
+     }
 .navbar .menu li a:hover{
     color: rgb(6, 110, 179);
 }
