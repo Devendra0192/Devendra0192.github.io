@@ -48,7 +48,7 @@ $(document).ready(function(){
         loop: true
     });
     var typed = new Typed(".typing-3", {
-        strings: [ "Learner", "Proactive Person","Collaborator"],
+        strings: [ "Learner", "Proactive","Collaborator","Communicator"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

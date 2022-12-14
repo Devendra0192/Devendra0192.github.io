@@ -434,12 +434,18 @@ section .title::after{
 }
 #soft{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius:20%;
+    border-radius:10%;
+    height:200px;
 }
 #tech{
     font-size:20px;
     font-weight: 600;
     color:rgb(6, 110, 179);
+}
+
+.info img{
+    height:150px;
+    width:150px;
 }
 #Certifications{
     font-size:30px;
