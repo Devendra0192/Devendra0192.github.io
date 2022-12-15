@@ -284,6 +284,13 @@ section .title::after{
     margin:50px 50px;
     margin-left:0px;
 }
+#coding_skills{
+    font-size:20px;
+    font-weight: 600;
+    color:rgb(6, 110, 179);
+    margin:50px 50px;
+    margin-left:0px;
+}
 #coding_skill{
     font-size:20px;
     font-weight: 600;
