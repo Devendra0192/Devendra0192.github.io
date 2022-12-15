@@ -58,7 +58,7 @@ section .title{
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
-    content: "";
+    content:"";
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -266,7 +266,7 @@ section .title::after{
     height:500px;
 }
 #git{
-    margin-left: 150px;
+    margin-left: 200px;
     width:80%;
     height:200px;
 }
@@ -439,8 +439,8 @@ section .title::after{
 }
 
 .info img{
-    height:150px;
-    width:150px;
+    height:70px;
+    width:70px;
 }
 #Certifications{
     font-size:30px;

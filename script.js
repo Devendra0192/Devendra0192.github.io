@@ -96,3 +96,7 @@ var element = document.body;
 setInterval(function() {
     element.classList.toggle("dark-mode")
 }, 10000);
+
+
+
+
