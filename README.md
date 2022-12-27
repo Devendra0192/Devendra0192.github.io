@@ -1,6 +1,6 @@
 ✨My Portfolio✨
 ---
-<img src="./images/pic2.png"/>
+<img src="./images/screenshot"/>
 
 💫Tech & Tools Used :
 Tech Stacks Used : HTML5, CSS3, Javascript.
