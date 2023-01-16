@@ -656,6 +656,12 @@
     color: #9416e9;
     background: none;
   }
+  #msg{
+    color:#9416e9;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+  }
   /* footer section styling */
   footer {
     background: #111;
