@@ -12,8 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
@@ -36,7 +34,6 @@
                 <li><a href="#project" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
                 <li><a href="./images/Devendra-Kumar-Resume (3).pdf" onclick="open_resume()" download>Resume</a></li>
-                
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -113,7 +110,8 @@
                     </div>
                     
                 </div>
-                <div class="column right">
+                <div class="column right" id="marginproblem">
+
                     <div class="skills-images">
                         <img src="https://cdn.iconscout.com/icon/free/png-128/netlify-3521601-2945045.png" alt="css">
                     </div>
@@ -164,25 +162,6 @@
                             </div>
                             <div class="demo-div">
                                 <span> <a href=" https://masai-cosmetics.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                      <img src="./images/lenscart.png" alt="">
-                        <div class="text">Lenskart</div>
-                        <p> Lenskart.com is an Indian e-commerce company that sells eyeglasses, contact lenses, and sunglasses. Lenskart has a wide variety of products .</p></br>
-                        
-                           
-                        
-                        <p class="techStack">HTML | JS | React | Netlify | Mongoose | Node.js | ChakraUI</p>
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/souravpl8092/Lenskart_Clone" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://masai-glasscart.netlify.app/" target="_blank">  Live Site  </a></span>
                             </div>
                         </div>
                     </div>
@@ -335,7 +314,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formsubmit.co/pawarvikas534@gmail.com"  method="POST"    >
+                    <form name="submit-to-google-sheet"   >
                  
                         <div class="fields">
                             <div class="field name">
@@ -355,6 +334,7 @@
                             <button type="submit">Send message</button>
                         </div>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -371,7 +351,7 @@
 </script>
 
 
-<script
+<!-- <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
@@ -379,7 +359,7 @@
     <script type="text/javascript">      (function () {
         emailjs.init("KDUmwfpD74fVfcxiV");
       })();
-    </script>
+    </script> -->
 
 
 
@@ -395,7 +375,24 @@
     GitHubCalendar("")
 </script>
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGHlJ3MJtojf4zOT7Xi1dtYGplStWYSCGvxud7TLKtYMQkEfW-UpEqHJPiZ90SdSP5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent !"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset();
+    })
 
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 
 
