@@ -76,10 +76,10 @@ $(document).ready(function () {
 
 
  // disable right click
-document.addEventListener('contextmenu', function(e){
-  alert("Sorry, right click is disabled to prevent leakage of confidential functions");
-  e.preventDefault();
-  });
+// document.addEventListener('contextmenu', function(e){
+//   alert("Sorry, right click is disabled to prevent leakage of confidential functions");
+//   e.preventDefault();
+//   });
 
   function open_resume(){
     window.open("https://drive.google.com/file/d/1ea218txTQitDsHY7fLT550bbTZ4XFfmC/view?usp=sharing","_blank")
